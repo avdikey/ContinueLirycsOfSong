@@ -7,12 +7,12 @@ using System.Windows;
 // Общие сведения об этой сборке предоставляются следующим набором
 // набор атрибутов. Измените значения этих атрибутов, чтобы изменить сведения,
 // связанные со сборкой.
-[assembly: AssemblyTitle("ContinueLirycsOfSong")]
+[assembly: AssemblyTitle("ContinueLyricsOfSong")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ContinueLirycsOfSong")]
-[assembly: AssemblyCopyright("Copyright ©  2021")]
+[assembly: AssemblyCompany("avdikey")]
+[assembly: AssemblyProduct("ContinueLyricsOfSong")]
+[assembly: AssemblyCopyright("Copyright © 2021, avdikey")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

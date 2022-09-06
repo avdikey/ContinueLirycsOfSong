@@ -1,0 +1,47 @@
+﻿<Window x:Class="ContinueLirycsOfSong.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ContinueLirycsOfSong"
+        mc:Ignorable="d"
+        Title="Главная: Продолжи слова песни" x:Name="tbl1" Height="400" Width="600" Background="#FFE9FBC9" Icon="itunes_ico5.ico"
+        ResizeMode="CanMinimize" Loaded="Window_Loaded" Activated="Window_Activated">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush x:Name="gradientsall" EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop x:Name="gradientfirst" Color="#FF71FF3C"/>
+                <GradientStop x:Name="gradientsecond" Color="#FFFFF755" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Menu HorizontalAlignment="Left"  VerticalAlignment="Top" FontSize="15">
+            <MenuItem Header="Игра" x:Name="tbl2">
+                <MenuItem.BorderBrush>
+                    <SolidColorBrush Color="Black" Opacity="0.5"/>
+                </MenuItem.BorderBrush>
+                <MenuItem Header="Выбрать файл игры и начать игру" x:Name="tbl3" Click="Button_Click"/>
+                <MenuItem Header="Инструкции" x:Name="tbl4">
+                    <MenuItem Click="tbl4_Click" x:Name="tbl4_1" Header="Как играть"/>
+                    <Separator/>
+                    <MenuItem Click="tbl4_Click_2" x:Name="tbl4_2" Header="Как создать файл игры"/>
+                </MenuItem>
+                
+                <Separator/>
+                <MenuItem Header="Выход" x:Name="tbl5" Click="tbl2_Click"/>
+            </MenuItem>
+            <MenuItem Header="Настройки" x:Name="tbl6" Click="MenuItem_Click">
+                <MenuItem.BorderBrush>
+                    <SolidColorBrush Color="Black" Opacity="0.5"/>
+                </MenuItem.BorderBrush>
+            </MenuItem>
+        </Menu>
+        <TextBlock x:Name="slogan" Text="игра «Продолжи слова песни»" FontFamily="Century Gothic" FontSize="18" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" VerticalAlignment="Center" ToolTip="Чтобы начать игру, выбери файл в меню Игра&gt;Начать игру">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform x:Name="sloganScale"/>
+                    <RotateTransform Angle="2"/>
+                </TransformGroup>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+    </Grid>
+</Window>
